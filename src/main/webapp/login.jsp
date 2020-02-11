@@ -7,7 +7,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-HI Home
-<a href="logout">logout</a>
+<div class="log-form">
+  <h2>login</h2>
+  ${SPRING_SECURITY_LAST_EXCEPTION.message}
+  <form action="login" method="POST">
+    <input type="text" name="username" />
+    <input type="password" name="password" />
+    <input type="submit" name="submit" value="submit" class="btn"/>
+    
+  </form>
+</div>
 </body>
 </html>
